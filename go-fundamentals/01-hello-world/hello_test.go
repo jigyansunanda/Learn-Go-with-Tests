@@ -39,6 +39,7 @@ func TestHello(t *testing.T) {
 		return true
 	})
 
+	// ----------------------- Clean up ----------------------------
 	t.Cleanup(func() {
 		fmt.Printf("✅ %d/%d test cases passed\n", passedTests, totalTests)
 	})
